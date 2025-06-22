@@ -23,7 +23,6 @@ namespace HW2_2_2
             var sizeW = CTR_Area.ActualWidth - CTR_button.ActualWidth;
 
             CTR_button.Margin = new Thickness(rand.Next(0, (int)sizeW), rand.Next(0, (int)sizeH), 0, 0);
-
         }
     }
 }
