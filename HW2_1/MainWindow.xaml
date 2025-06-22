@@ -1,0 +1,14 @@
+﻿<Window x:Class="HW2_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW2_1"
+        mc:Ignorable="d"
+        Title="Счетчик кликов" Height="250" Width="300">
+    <Grid>
+        <TextBlock x:Name="CTR_Clicks" HorizontalAlignment="Center" Margin="0,67,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="24"/>
+        <Button Content="Нажми" HorizontalAlignment="Center" Height="39" Margin="0,117,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click"/>
+
+    </Grid>
+</Window>
