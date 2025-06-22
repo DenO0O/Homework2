@@ -11,7 +11,7 @@ namespace HW2_1_2
         public MainWindow()
         {
             InitializeComponent();
-            CTR_RedSignal.Fill = Brushes.Red;
+            CTR_RedSignal.Fill = Brushes.Red; 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
