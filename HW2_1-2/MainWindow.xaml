@@ -1,0 +1,15 @@
+﻿<Window x:Class="HW2_1_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW2_1_2"
+        mc:Ignorable="d"
+        Title="Светофор" Height="480" Width="200">
+    <Grid>
+        <Ellipse x:Name ="CTR_RedSignal" HorizontalAlignment="Center" Height="100" Margin="0,25,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Fill="Gray"/>
+        <Ellipse x:Name ="CTR_YellowSignal" HorizontalAlignment="Center" Height="100" Margin="0,142,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Fill="Gray"/>
+        <Ellipse x:Name ="CTR_GreenSignal" HorizontalAlignment="Center" Height="100" Margin="0,258,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Fill="Gray"/>
+        <Button Content="Next" HorizontalAlignment="Center" Height="34" Margin="0,390,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+    </Grid>
+</Window>

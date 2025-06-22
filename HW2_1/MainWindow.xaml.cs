@@ -1,13 +1,4 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace HW2_1
 {
@@ -16,10 +7,18 @@ namespace HW2_1
     /// </summary>
     public partial class MainWindow : Window
     {
+        int ClickCount = 0;
+
         public MainWindow()
         {
             InitializeComponent();
-            var a = 1;
+            CTR_Clicks.Text = ClickCount.ToString();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ClickCount++;
+            CTR_Clicks.Text = ClickCount.ToString();
         }
     }
 }

@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW2_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Счетчик кликов" Height="250" Width="300">
     <Grid>
+        <TextBlock x:Name="CTR_Clicks" HorizontalAlignment="Center" Margin="0,67,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="24"/>
+        <Button Content="Нажми" HorizontalAlignment="Center" Height="39" Margin="0,117,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click"/>
 
     </Grid>
 </Window>
