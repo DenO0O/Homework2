@@ -1,0 +1,32 @@
+﻿<Window x:Class="hw2_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hw2_3"
+        mc:Ignorable="d"
+        Title="Выбор курса" Height="494" Width="400">
+    <StackPanel>
+        <TextBlock Text="Имя студента:" Margin="4,20,4,2"/>
+        <TextBox x:Name="CTR_Name" Margin="4,2"/>
+        <TextBlock Text="Факультет:" Margin="4,2"/>
+        <ComboBox x:Name="CTR_FakultetNames" Margin="4,2" SelectedIndex="0">
+            <TextBlock Text="Программирование"/>
+            <TextBlock Text="Дизайн"/>
+            <TextBlock Text="Менеджмент"/>
+        </ComboBox>
+        <TextBlock Text="Доступные курсы:" Margin="4,2"/>
+        <ListBox x:Name="CTR_CourseNames" Margin="4,2" Height="150" SelectedIndex="0" SelectionMode="Multiple" >
+            <ListBoxItem>Курс1</ListBoxItem>
+            <ListBoxItem>Курс2</ListBoxItem>
+            <ListBoxItem>Курс3</ListBoxItem>
+        </ListBox>
+        <TextBlock Text="Форма обучения:" Margin="4,2"/>
+        <RadioButton x:Name="CTR_FullTime" Content="Очная" GroupName="g1" Margin="4,2" IsChecked="True"/>
+        <RadioButton Content="Заочная" GroupName="g1" Margin="4,2"/>
+        <TextBlock Text="Продолжительность в часах в неделю:" Margin="4,2"/>
+        <Slider x:Name="CTR_Hours" Minimum="2" Maximum="8"  Margin="4,2" AutoToolTipPlacement="TopLeft" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+        <CheckBox x:Name="CTR_Check" Content="Я согласен на обработку данных" Margin="4,10"/>
+        <Button Content="Записаться" Margin="4,2" Click="Button_Click"/>
+    </StackPanel>
+</Window>
