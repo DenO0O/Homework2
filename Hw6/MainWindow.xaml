@@ -13,7 +13,7 @@
         <TextBox x:Name="Text" Margin="20" />
         <CheckBox x:Name="CB_Visibility" Content="Показать детали" Margin="20,0" IsChecked="True"/>
         <StackPanel Margin="20,5" Visibility="{Binding ElementName=CB_Visibility, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
-            <TextBlock Text="Длина текста: XX"/>
+            <TextBlock Text="{Binding Text.Length, StringFormat='Длина текста: {0}', ElementName=Text}"/>
             <ProgressBar Height="18" Margin="0,5" Value ="{Binding Text.Length, ElementName=Text, Mode=OneWay}"/>
         </StackPanel>
     </StackPanel>
